@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <!-- [Rest of the head content] -->
+  </head>
+  <body>
+    <header>
+      <h1><%= index %></h1>
+      <nav>
+        <ul id="navfive">
+          <li><a href="/home.html">Home</a></li>
+          <li><a href="/events">Events</a></li>
+        </ul>
+      </nav>
+      <h3>GSW Events</h3>
+    </header>
+
+    <main>
+      <!-- Add event form -->
+      <h2>Add Event</h2>
+      <form action="/events/addevent" method="POST">
+        <label for="title">Event Name:</label>
+        <input type="text" name="title" required>
+        <br>
+        <label for="time">Event Time:</label>
+        <input type="time" name="time" required>
+        <br>
+        <label for="date">Event Date:</label>
+        <input type="date" name="date" required>
+        <br>
+        <label for="location">Event Location:</label>
+        <input type="text" name="location" required>
+        <br>
+        <label for="description">Event Description:</label>
+        <textarea name="description" required></textarea>
+        <br>
+        <label for="eventImage">Event Image URL:</label>
+        <input type="url" name="eventImage" required>
+        <br>
+        <label for="windowsToWorld">Windows to World:</label>
+        <input type="checkbox" name="windowsToWorld">
+        <br>
+        <button type="submit">Add Event</button>
+      </form>
+
+      <!-- Add club form -->
+     <!-- Add club form -->
+<h2>Add Club</h2>
+<form action="/clubs/addclub" method="POST">
+  <label for="title">Club Name:</label>
+  <input type="text" name="title" required>
+  <br>
+  <label for="advisor[name]">Club Advisor:</label>
+  <input type="text" name="advisor[name]" required>
+  <br>
+  <label for="advisor[email]">Club Advisor Email:</label>
+  <input type="email" name="advisor[email]" required>
+  <br>
+  <label for="description">Club Description:</label>
+  <textarea name="description" required></textarea>
+  <br>
+  <label for="clubLogo">Club Logo URL:</label>
+  <input type="url" name="clubLogo" required>
+  <br>
+  <label for="time">Club Time:</label>
+  <input type="time" name="time" required>
+  <br>
+  <label for="date">Club Date:</label>
+  <input type="date" name="date" required>
+  <br>
+  <label for="location">Club Location:</label>
+  <input type="text" name="location" required>
+  <br>
+  <button type="submit">Add Club</button>
+</form>
+
+    </main>
+  </body>
+</html>

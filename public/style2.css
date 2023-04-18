@@ -1,0 +1,191 @@
+body {
+    font-family: 'Gotham Book', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+  }
+  
+  /* Navigation */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #C69214;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #00205B;
+    font-family: 'Gotham Book', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding: 19px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #97999B;
+  }
+  
+  .active {
+    background-color: #fff;
+  }
+  
+  /* Event and Club cards */
+  .event-card,
+  .club-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .event-card h3,
+  .club-card h3 {
+    margin-top: 0;
+    color: #0077c0;
+  }
+  
+  .event-card p,
+  .club-card p {
+    color: #333333;
+    font-size: 16px;
+  }
+  
+  .event-card ul,
+  .club-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .event-card li,
+  .club-card li {
+    padding: 4px 0;
+  }
+  
+  .event-card button,
+  .club-card button {
+    background-color: #0077c0;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .event-card button:hover,
+  .club-card button:hover {
+    background-color: #005ea8;
+  }
+  
+  /* Headers */
+  h2 {
+    font-family: 'Gotham Bold', sans-serif;
+    text-align: center;
+    margin: 9px;
+    padding: 8px;
+    padding-right: 18%;
+    font-size: 20px;
+    color: #00205B;
+  }
+  
+  h3 {
+    font-family: 'Gotham Bold', sans-serif;
+    text-align: center;
+    margin: 9px;
+    padding: 8px;
+    padding-right: 18%;
+    font-size: 20px;
+    color: #00205B;
+  }
+  
+  /* Main content container */
+  main {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  
+  /* Events page */
+  #events .events-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;
+  }
+  
+  /* Clubs page */
+  #club-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000;
+  }  
+  td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  
+  footer {
+    background-color: #00205B;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #club-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;
+  }
+  
+  .logo img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  #event-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #event-list li {
+    padding: 4px 0;
+  }
+  
